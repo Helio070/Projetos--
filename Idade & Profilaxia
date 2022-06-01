@@ -1,0 +1,112 @@
+print()
+print('Programa desenvolvido por: Hélio Silva Filho - Academico'
+      ' de Medicina Veterinária')
+print()
+print()
+print('Seja bem vindo!')
+print('Este programa foi desenvolvido com a finalidade de lhe mostrar algumas '
+      'curiosidades e índices a respeito da idade do seu melhor amigo!')
+print()
+print('Vamos prosseguir!')
+
+nomepet = input('Digite o nome do seu/sua pet, por favor: ')
+idadepet = input('Digite aqui quantos anos o seu/sua melhor amigo tem: ')
+idadepet = int(idadepet)
+
+idade1 = 2
+idade2 = 6
+
+if idadepet <= idade1:
+    print(f'Nosso amigo(a) {nomepet} ainda é filhote!')
+    print()
+    print(f'Devemos nos atentar as primeiras vacinas, pois a imundade do(a) {nomepet}'
+          ' ainda não está formada.')
+    print("Devemos também, nos atentar ao manejo nutricional, assim evitando a "
+          "obesidade e a desnutrição, tendo em vista o um futuro com muita qualidade de vida!")
+    print()
+    simresp = input('Deseja saber mais sobre a vacinação em filhotes?(S/N) ')
+    sim = 'S'
+
+    if simresp == sim:
+        print('As vacinas consideradas obrigatórias são:')
+        print('*V6, V8 ou V10 - A primeira dose é aplicada de 6 a 8 semanas de vida.'
+              ' O veterinário dirá qual é a mais indicada para seu cachorro. '
+              'Serão administradas três doses com intervalo médio de 21 dias.')
+        print('Antirrábica – Deve ser aplicada com 24 semanas de vida e possui apenas uma dose.')
+        print()
+        print('Assim, voce podera evitar doenças como a Cinomose, Parvovirose, Hepatite infecciosa'
+              'canina e Leptospirose.')
+        print('Muito Obrigado! Fico feliz que queira saber a respeito do seu(a) pet,'
+              'com conhecimento podemos melhorar o bem estar e a qualidade de vida dos mesmos!')
+    else:
+        print('Ok! Muito Obrigado por ter usado esse app, é de fundamental '
+              'importancia o conhecimento para a qualidade de vida do seu animal')
+
+
+elif idadepet > idade1 and idadepet <= idade2:
+    print(f'Nosso amigo(a) {nomepet} ainda é jovem! ')
+    print('Devemos nos atentar ao fornecimento de uma ração balanceada '
+          'e também a qualidade de vida do seu animal! ')
+    print('Lembre-se de consultar rotineiramente com um profissional veterinário!')
+    sim1 = input('Deseja saber mais sobre rações?(S/N) ')
+    simr = 'S'
+    if sim1 == simr:
+        print('O alimento ideal para o cachorro deve conter fontes de proteínas (carne bovina, suína, '
+              'de frango, de peixe, soja e ovo), ')
+        print('carboidratos (arroz, milho e outros), gorduras (óleos'
+              ' de origem animal e vegetal), vitaminas, fibras, minerais e água – de forma equilibrada,'
+              ' ou seja: ')
+        print('em quantidades e proporções corretas para a espécie. Nas rações, a suplementaçã'
+              'o de vitaminas e ')
+        print('minerais não essencial, mas pode ser recomendada pelo veterinário em casos'
+              ' específicos.')
+        rac = input('Deseja ver algumas rações disponíveis no mercado?(S/N) ')
+        rar = 'S'
+        if rac == rar:
+            print('Voce pode conferir algumas rações utilizando esse link:')
+            print('https://www.google.com/search?q=ra%C3%A7%C3%B5es+para+cachorro&sxsrf=ALiC'
+                  'zsY6bWl2pvjzHCgUht4t_ocD5GFmrw:1653775921765&source=lnms&tbm=shop&sa=X&ved'
+                  '=2ahUKEwingOuym4P4AhU6AbkGHSLQBxcQ_AUoAXoECAEQAw&biw=1366&bih=625&dpr=1')
+            print()
+            print('Muito obrigado por chegar até aqui, é admiravel a sua busca por melhorar'
+                  'o bem estar e a qualidade de vida do seu animalzinho!')
+        else:
+            print('Ok! Muito Obrigado por ter usado esse app, é de fundamental importan'
+                  'cia o conhecimento para a qualidade de vida do seu animal')
+
+    else:
+        print('Ok! Muito Obrigado por ter usado esse app, é de fundamental '
+              'importancia o conhecimento para a qualidade de vida do seu animal')
+
+elif idadepet > idade2:
+    print(f'Nosso amigo(a) {nomepet} já se encontra na fase senil! ')
+    print('Nessa fase nós devemos dar toda a atenção para o nosso animal '
+          'pois é nesse momento que ele está mais predisposto a doenças como:')
+    print('* Artrose, Artrite, Osteoartrite e Osteoartrose.')
+    print('* Cancer')
+    print('* Catarata')
+    print('* Obsidade desencadeada pela baixa do metabolismo')
+    print('* Doenças Dentais')
+    print('* Insuficiencia Renal')
+    print()
+
+    prg = input('Deseja saber mais?(S/N) ')
+    pr = 'S'
+    if prg == pr:
+        print()
+        print('Sabendo disso, devemos manter uma dieta balanceada e manter uma regularidade na'
+              'atividade física como passeios '
+              'por exemplo!')
+        print('É um estágio da vida dos pets na'
+              'qual existe a tendencia aos pets sere'
+              'm menos ativos. Assim consequentemente realizando'
+              'a baixa no metabolismo. ')
+        print('Vale ressaltar a'
+              ' importancia de levar o seu animal no profissional'
+              ' veterinário de maneira periodica! ')
+        print()
+        print('Caso queira saber mais, recomendamos a leitura dessa matéria!')
+        print('https://www.ative.pet/reabilitacao/cuidados-com-cachorro-idoso/')
+
+    else:
+        print('Ok! Muito Obrigado por ter usado esse app, é de fundamental ''importancia o conhecimento para a qualidade de vida do seu animal')
